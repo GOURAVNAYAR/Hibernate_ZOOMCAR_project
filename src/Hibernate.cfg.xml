@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+    
+        <!-- Database connection settings -->
+        <property name="connection.url">jdbc:mysql://localhost:3306/ZOOM_CAR_PROJECT</property>
+        <property name="connection.user">root</property>
+        <property name="connection.password">root</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+        <property name="hibernate.show_sql">true</property>
+        <property name="hibernate.hbm2ddl.auto">create</property>
+	
+        <mapping class="Dto.My_Account" />
+        <mapping class="Dto.Book_Car_For_Mounth" />
+        <mapping class="Dto.Book_Car_For_Day"/>
+        <mapping class="Dto.Rent_A_Car" />
+        <mapping class="Dto.AboutUs" />
+        <mapping class="Dto.HelpAndSupport" />
+        <mapping class="Dto.Popular_place" />
+        <mapping class="Dto.Car_Detals" />
+        <mapping class="Dto.Favourites_car" />
+        <mapping class="Dto.Pay"/>
+        <mapping class="Dto.Features" />
+        <mapping class="Dto.Best_place_To_Vist_in_Bhopal" />
+        <mapping class="Dto.Place_For_Indore"/>
+        <mapping class="Dto.Professional_Place" />
+         
+    </session-factory>
+</hibernate-configuration>
